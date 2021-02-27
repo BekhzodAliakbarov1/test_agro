@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    max-width: 1170px;
+    width: 100%;
+    /* height: 100vh; */
+    margin: 0px;
+    padding-top: 60px;
+    background-color: #E6E6E6;
+}
+.inMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 100%;
+}
+.logo{
+    width: 270px;
+    height: 208px;
+    background-size: cover;
+    margin-top: 45px;
+    margin-bottom: 50px;
+
+}
+.formIn{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0px;
+}
+.formIn h4{
+    color: #000;
+    font: 600 16px "Josefin Sans",  sans-serif;
+}
+.inMain form{
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+.inMain form input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 2px solid #65AC1B;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.inMain form input::placeholder{
+    padding: 5px;
+    color: #020202;
+    font-size: 20px;
+}
+.formIn form button{
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    background-color: #C44647;
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+    font: 400 20px "Josefin Sans", sans-serif;
+}
+.formIn button:hover{
+    opacity: .8;
+}
+@media screen and (max-width: 900px ){
+    
+    .logo{
+        width:340px;
+        height: 260px;
+    }
+}
+@media screen and (max-width: 500px ){
+    .main{
+        height: 100vh;
+    }
+    .formIn{
+        width: 90%;
+    }
+    .inMain{
+        width: 90%;
+    }
+    .logo{
+        width: 260px;
+        height: 290px;
+    }
+}

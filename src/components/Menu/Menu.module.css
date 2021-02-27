@@ -1,0 +1,56 @@
+.main{
+    /* padding-top: 70px; */
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(145deg, #9ecb3c, #328736);
+    z-index: 101;
+    position: absolute;
+}
+.logoContainer{
+    display: flex;
+    width: 220px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+.logo{
+    height: 36px;
+    min-width: 159px;
+    background-position: center;
+    background-size: cover;
+}
+.logoCow{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    color: rgb(209, 10, 53);
+}
+.container{
+    height: 60%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.container div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+    background: transparent;
+}
+.container a{
+    width: 80%;
+    margin: auto;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.container div:hover{
+    background:linear-gradient(to left, #bf3a3b, #d76968) ;
+    transition: all 1s ease;
+}

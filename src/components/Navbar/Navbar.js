@@ -2,14 +2,20 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import style from './Navbar.module.css';
 import {VscChromeClose, VscMenu} from 'react-icons/vsc'
-import img from '../../assets/img/agro.jpg'
+import img from '../../assets/img/image.png'
+import img1 from '../../assets/img/logoBuqa.png'
 
 const navbarLinks = [
-    {path:'/', name:'МОИ ТОВАРЫ'},
-    {path:'/search', name:'Начат поиск'},
-    {path:'/contact', name:'СВЯЗ'},
-    {path:'/cLicked', name:'Избранний'},
-    {path:'/settings', name:'Настройки'},
+    {path:'/', name:'loader'},
+    {path:'/register1', name:'Register'},
+    {path:'/menu', name:'Menu'},
+    {path:'/search', name:'Search'},
+    {path:'/register', name:'Register'},
+    {path:'/add', name:'Add'},
+    {path:'/addProduct', name:'AddProduct'},
+    {path:'/wheat', name:'Product'},
+    {path:'/inform', name:'Inform'},
+    {path:'/register3', name:'Example'},
 ]
 
 function Navbar() {
@@ -28,12 +34,16 @@ function Navbar() {
             clearInterval(timer)
         }
     })
+    console.log(scroll);
     const navbarDesktop = () => {
         return(
             <div className={style.main}>
                 <div className={style.container}>
-                    <div className={style.logo} style={{backgroundImage: `url(${img})`}}>
+                    <div className={style.images}>
+                        <div className={style.logoCow} style={{backgroundImage:`url(${img1})`}}>
 
+                        </div>
+                        <div className={style.logo} style={{backgroundImage: `url(${img})`}}></div>
                     </div>
                     <div className={style.links}>
                         {
@@ -54,8 +64,11 @@ function Navbar() {
         return(
             <div className={style.mainPhone}>
                 <div className={style.containerPhone}>
-                    <div className={style.logo} style={{backgroundImage: `url(${img})`}}>
+                    <div className={style.images}>
+                        <div className={style.logoCow} style={{backgroundImage:`url(${img1})`}}>
 
+                        </div>
+                        <div className={style.logo} style={{backgroundImage: `url(${img})`}}></div>
                     </div>
                     {clicked ? <VscChromeClose onClick={() => setclicked(false)}/> : <VscMenu onClick={() => setclicked(true)}/>}
                 </div>
@@ -63,7 +76,7 @@ function Navbar() {
                     {
                         navbarLinks.map((link, index) => {
                             return(
-                                <Link key={index} to={link.path}>
+                                <Link onClick={() => setclicked(false)} key={index} to={link.path}>
                                     {link.name}                                   
                                 </Link>
                             )

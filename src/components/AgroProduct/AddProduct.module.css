@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    
+    max-width: 1170px;
+    width: 100%;
+    /* height: 100vh; */
+    margin: 0px;
+    padding-top: 70px;
+    background-color: #E6E6E6;
+}
+.inMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 100%;
+}
+.logo{
+    width: 270px;
+    height: 215px;
+    background-size: cover;
+    margin-top: 45px;
+    margin-bottom: 50px;
+
+}
+.add{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    /* justify-content: center; */
+    margin: auto;
+    padding: 0px;
+}
+.add h4{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+    font: 600 16px "Josefin Sans",  sans-serif;
+}
+.select {
+    margin: 20px auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial;
+}
+.select select {
+    /* display: none;  */
+    background-color: #64AB1D;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    font: 600 16px "Josefin Sans", sans-serif;
+  }
+  .select select option{
+      width: 100px;
+      height: 50px;
+  }
+.add .btn button{
+    width: 100%;
+    height: 50px;
+    background-color: #C44647;
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+    font: 400 20px "Josefin Sans", sans-serif;
+}
+@media screen and (max-width: 900px ){
+    
+    .logo{
+        width:340px;
+        height: 260px;
+    }
+}
+@media screen and (max-width: 500px ){
+    .main{
+        height: 100vh;
+    }
+    .add{
+        width: 90%;
+    }
+    
+    .inMain{
+        width: 90%;
+    }
+    .logo{
+        width: 260px;
+        height: 290px;
+    }
+    /* .add div {
+        position: absolute;
+        bottom: 40px;
+        left: 65px;
+        width: 250px;
+    } */
+}

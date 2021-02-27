@@ -1,0 +1,112 @@
+.main{
+    margin: 0;
+    padding-top: 70px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 270px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    /* margin-top: 30vh; */
+    padding: 5%;
+}
+
+.container>h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.blocks{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blockLeft{
+    width: 50%;
+}
+
+.blockLeft div{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.blockRight{
+    width: 50%;
+}
+
+.blockRight div{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn{
+    width: 80%;
+    min-height: 50px;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.main svg{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width:900px){
+
+    
+    img{
+        width: 100%;
+        height: auto;
+        /* padding: 20px; */
+        margin: 0;
+    }
+    
+    .container>h3{
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .btn{
+        width: 80%;
+        height: 50px;
+        background-color: #C44647;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+    }
+    
+    
+}
