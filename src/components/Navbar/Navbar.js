@@ -9,7 +9,7 @@ const navbarLinks = [
     {path:'/', name:'загрузка'},
     {path:'/register1', name:'регистрация'},
     {path:'/menu', name:'меню'},
-    {path:'/search', name:'Search'},
+    {path:'/search', name:'поиск'},
     {path:'/register', name:'регистрация'},
     {path:'/add', name:'добавить'},
     {path:'/addProduct', name:'продукты'},
