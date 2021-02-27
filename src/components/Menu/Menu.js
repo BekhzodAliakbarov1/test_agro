@@ -38,7 +38,7 @@ function Menu() {
                     </Link>
                 </div>
                 <div>
-                    <Link to='#'>
+                    <Link to='/'>
                         Выход
                     </Link>
                 </div>

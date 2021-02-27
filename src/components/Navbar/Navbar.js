@@ -6,16 +6,16 @@ import img from '../../assets/img/image.png'
 import img1 from '../../assets/img/logoBuqa.png'
 
 const navbarLinks = [
-    {path:'/', name:'loader'},
-    {path:'/register1', name:'Register'},
-    {path:'/menu', name:'Menu'},
+    {path:'/', name:'загрузка'},
+    {path:'/register1', name:'регистрация'},
+    {path:'/menu', name:'меню'},
     {path:'/search', name:'Search'},
-    {path:'/register', name:'Register'},
-    {path:'/add', name:'Add'},
-    {path:'/addProduct', name:'AddProduct'},
-    {path:'/wheat', name:'Product'},
-    {path:'/inform', name:'Inform'},
-    {path:'/register3', name:'Example'},
+    {path:'/register', name:'регистрация'},
+    {path:'/add', name:'добавить'},
+    {path:'/addProduct', name:'продукты'},
+    {path:'/wheat', name:'продукт'},
+    {path:'/inform', name:'информация'},
+    {path:'/register3', name:'пример'},
 ]
 
 function Navbar() {
